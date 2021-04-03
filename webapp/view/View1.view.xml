@@ -1,0 +1,17 @@
+<mvc:View controllerName="COM.SAPSAMPLEDEM1.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<Table items="{ path: 'DT>/rowData2', factory: '.productListFactory' }" columns="{DT>/colData2}" mode="SingleSelectMaster"
+						select="handleGLItemPress">
+						<columns>
+							<Column width="12em"></Column>
+						</columns>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
